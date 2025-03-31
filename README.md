@@ -4,6 +4,8 @@ This repo contains the code for **Lecture 10: UIKit**, updated for Spring 2025.
 
 In this lecture, we'll be using PencilKit to build an app that lets you create and save drawings to your device. Along the way, you'll learn how to use UIViewRepresentable to use UIKit views with minimal fuss in SwiftUI.
 
+> As always, the finished code is available on the [`solution` branch](https://github.com/cis1951/Paint/tree/solution).
+
 ## Step 1: Set up the canvas view
 
 If we launch our app right now, we'll see that while it builds and runs, all we see when we get to a drawing is the simple "Hello, world!" message located in our `CanvasView`. We ideally want to replace this with an actual drawing canvas.
