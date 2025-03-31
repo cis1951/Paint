@@ -8,6 +8,7 @@ extension EnvironmentValues {
 struct CanvasView: UIViewRepresentable {
     @Binding var drawing: PKDrawing
     @Environment(\.toolPicker) var toolPicker
+    @Environment(\.undoManager) var undoManager
     
     func makeUIView(context: Context) -> PKCanvasView {
         let view = PKCanvasView()
@@ -46,7 +47,9 @@ struct CanvasView: UIViewRepresentable {
         func canvasViewDrawingDidChange(_ canvasView: PKCanvasView) {
             if parent.drawing != canvasView.drawing {
                 Task { @MainActor in
+                    parent.undoManager?.disableUndoRegistration()
                     parent.drawing = canvasView.drawing
+                    parent.undoManager?.enableUndoRegistration()
                 }
             }
         }
