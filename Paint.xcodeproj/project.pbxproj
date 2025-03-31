@@ -24,6 +24,7 @@
 		890ADF3B2D9A09D500FC1EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		890ADF3C2D9A09D500FC1EAC /* PaintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintApp.swift; sourceTree = "<group>"; };
 		890ADF3D2D9A09D500FC1EAC /* PaintDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintDocument.swift; sourceTree = "<group>"; };
+		89FACE962D9B4A73002BF571 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		890ADF162D98B00100FC1EAC = {
 			isa = PBXGroup;
 			children = (
+				89FACE962D9B4A73002BF571 /* README.md */,
 				890ADF3E2D9A09D500FC1EAC /* Paint */,
 				890ADF202D98B00100FC1EAC /* Products */,
 			);
