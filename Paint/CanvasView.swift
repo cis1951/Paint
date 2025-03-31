@@ -55,3 +55,11 @@ struct CanvasView: UIViewRepresentable {
         }
     }
 }
+
+#Preview {
+    @Previewable @State var drawing = PKDrawing()
+    @Previewable @State var toolPicker = PKToolPicker()
+    
+    CanvasView(drawing: $drawing)
+        .environment(\.toolPicker, toolPicker)
+}
