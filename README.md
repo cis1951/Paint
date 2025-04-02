@@ -119,3 +119,11 @@ view.delegate = context.coordinator
 ```
 
 And we're done with wiring up the `drawing` binding! Try running the app now — you'll notice that you can save and reload drawings just like you'd expect from a typical file.
+
+## Bonus Step: Adding a Tool Picker
+
+If you've made it this far, great job! Now you may have noticed some code around related to a Tool Picker in the `ContentView` and original `CanvasView`.
+
+If you find yourself with extra time, to try to add a [`PKToolPicker`](https://developer.apple.com/documentation/pencilkit/pktoolpicker) to the app so you can control what pen you are drawing with (color, size, etc.).
+
+It should be pretty straightforward to add and doesn't require too much more code (you should only need to modify the `CanvasView` struct). If you want to see the completed version, check out the [`solution` branch](https://github.com/cis1951/Paint/tree/solution)!
