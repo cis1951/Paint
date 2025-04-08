@@ -4,7 +4,7 @@ import UniformTypeIdentifiers
 
 extension UTType {
     static var drawing: UTType {
-        UTType(importedAs: "edu.upenn.seas.cis1951.drawing")
+        UTType(exportedAs: "edu.upenn.seas.cis1951.drawing")
     }
 }
 
